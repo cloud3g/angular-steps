@@ -1,0 +1,18 @@
+<div class="header-container">
+  <div class="list-title-wrapper">
+    {{ listTitle }}
+  </div>
+  <div class="suggest-btn-wrapper">
+    <nz-dropdown [nzTrigger]="'click'" [nzClickHide]="false" [nzPlacement]="'bottomRight'">
+      <button nz-dropdown nz-button [nzType]="'primary'">
+        <i class="anticon anticon-bulb"></i>建议
+      </button>
+      <!-- hack nz-zorro! -->
+      <div nz-menu class="dropdown-content-wrapper">
+
+      </div>
+    </nz-dropdown>
+  </div>
+  <div class="action-btn-wrapper">
+  </div>
+</div>
