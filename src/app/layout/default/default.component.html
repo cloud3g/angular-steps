@@ -1,26 +1,44 @@
-<nz-layout class="full-screen">
-  <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzWidth]="260">
-    <app-sidebar [isCollapsed]="isCollapsed"></app-sidebar>
-  </nz-sider>
-  <nz-content class="container">
-    <app-content></app-content>
-  </nz-content>
-</nz-layout>
-<router-outlet></router-outlet>
+<!--<nz-layout class="full-screen">-->
+  <!--<nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzWidth]="260">-->
+    <!--<app-sidebar [isCollapsed]="isCollapsed"></app-sidebar>-->
+  <!--</nz-sider>-->
+  <!--<nz-content class="container">-->
+    <!--<app-content></app-content>-->
+  <!--</nz-content>-->
+<!--</nz-layout>-->
+<!--<router-outlet></router-outlet>-->
 
 <!--<nz-layout>-->
   <!--<nz-sider>-->
-    <!--<app-sidebar></app-sidebar>-->
+    <!--<app-sidebar>-->
+    <!--左侧-->
+    <!--</app-sidebar>-->
   <!--</nz-sider>-->
   <!--<nz-layout>-->
     <!--<nz-header>-->
-      <!--<app-header></app-header>-->
+      <!--<app-header>-->
+      <!--头部-->
+      <!--</app-header>-->
     <!--</nz-header>-->
     <!--<nz-content>-->
-      <!--<app-default><router-outlet></router-outlet></app-default>-->
+      <!--<app-default>-->
+        <!--内容-->
+      <!--</app-default>-->
     <!--</nz-content>-->
     <!--<nz-footer>-->
-      <!--footer-->
+      <!--尾部-->
     <!--</nz-footer>-->
   <!--</nz-layout>-->
 <!--</nz-layout>-->
+
+<nz-layout>
+  <nz-sider>
+    <app-sidebar [isCollapsed]="isCollapsed"></app-sidebar>
+  </nz-sider>
+  <nz-layout>
+    <app-content></app-content>
+    <!--<nz-header>Header</nz-header>-->
+    <!--<nz-content>Content</nz-content>-->
+    <!--<nz-footer>Footer</nz-footer>-->
+  </nz-layout>
+</nz-layout>
